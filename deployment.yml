@@ -28,3 +28,15 @@ spec:
   - name: http
     port: 8081
     targetPort: 80
+
+scanners: 
+  - sast
+  - dast
+  - secret - sca
+  - iac
+  - container
+dast:
+  url: http://XXXXXXXXXXXXXXXX:8081/ 
+  fortipentest_scanner: false #true|false 
+  full_scan: true #true|false
+  
